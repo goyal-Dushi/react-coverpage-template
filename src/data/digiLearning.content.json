@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "content": "Identity & Access Management"
+  },
+  {
+    "id": 2,
+    "content": "Active Directory & Exchange Email"
+  },
+  {
+    "id": 3,
+    "content": "Sailpoint IIQ"
+  },
+  {
+    "id": 4,
+    "content": "Sailpoint Identity Now"
+  },
+  {
+    "id": 5,
+    "content": "Okta"
+  },
+  {
+    "id": 6,
+    "content": "Auth0"
+  },
+  {
+    "id": 7,
+    "content": "Ping Identity"
+  },
+  {
+    "id": 8,
+    "content": "Cyber Ark"
+  },
+  {
+    "id": 9,
+    "content": "RSA IGL"
+  },
+  {
+    "id": 10,
+    "content": "Data Science"
+  },
+  {
+    "id": 11,
+    "content": "Machine Learning"
+  },
+  {
+    "id": 12,
+    "content": "Aritificial Intelligence"
+  },
+  {
+    "id": 13,
+    "content": "Python & R Programming"
+  },
+  {
+    "id": 14,
+    "content": "Java Script, Java, Angular, API, Node js and React"
+  }
+]
