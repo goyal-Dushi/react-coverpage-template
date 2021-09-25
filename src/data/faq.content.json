@@ -1,0 +1,29 @@
+{
+  "title": "FAQ's",
+  "rows": [
+    {
+      "title": "1. I want to know more about one of your trainings. Whom can I contact?",
+      "content": "- You can contact one of the below numbers and we would love to answer your queries anytime."
+    },
+    {
+      "title": "2. How can I register for training?",
+      "content": "- Please fill the form with the course details you want to enroll and someone from our team will contact you back ASAP."
+    },
+    {
+      "title": "3. What if I miss few training sessions?",
+      "content": "- You will be provided the recorded sessions anyway so that you can go through it but still if you have any queries, you can contact the trainer to clear them."
+    },
+    {
+      "title": "4. Can I have any Demo video of training before I get enroll?",
+      "content": "- Of course, we will provide you a demo one before enrolling."
+    },
+    {
+      "title": "5. Will I get recordings of the training session and for how long?",
+      "content": "- You will be provided access to the videos along with the materials if any and access will be for 1 year at least. This can be extended if needed."
+    },
+    {
+      "title": "6. Do I get any support from Trainer after training completion?",
+      "content": "- Yes, you will be provided support from us for few months and can be extended on request."
+    }
+  ]
+}

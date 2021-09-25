@@ -1,0 +1,16 @@
+[
+  {
+    "id": "goanalytics",
+    "title": "GO ANALYTICS",
+    "subtitle": "Can predictive analytics improve performance? What are analytics tools?",
+    "imageURL": "assets/images/hrms.png",
+    "content": "Business analytics tools are types of application software thatretrieve data from one or more business systems and combine it in arepository, such as a data warehouse, to be reviewed and analysed.In simple terms below: Analytics is the systematiccomputational analysis of data or statistics. It is used for thediscovery, interpretation, and communication of meaningful patternsin data. It also entails applying data patterns towards effectivedecision-making. we focus on the four types of data analytics weencounter in data science: Descriptive, Diagnostic, Predictive andPrescriptive."
+  },
+  {
+    "id": "digikaagaz",
+    "title": "Digi Kaagaz",
+    "subtitle": "Digi kaagaz is complete paperless data security tool forsourcing job and HRM portal management.Say “No” to Xerox, third party scanners, unsecured email box,data in everyday life is very important",
+    "imageURL": "assets/images/hrms.png",
+    "content": "Job portals, or job boards, which are an integral part ofDigikagaz first view application, where you can advertise jobs and search for resumes.Digi Kaagaz is a suite of software applications used to managehuman resources and related processes throughout the employee lifecycle."
+  }
+]
