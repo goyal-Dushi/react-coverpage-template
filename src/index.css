@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -18,4 +19,10 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+i,
+button,
+a {
+  cursor: pointer;
 }
