@@ -1,4 +1,5 @@
 /******** Testing dependencies **********/
+
 "@testing-library/jest-dom": "^5.14.1",
 "@testing-library/react": "^11.2.7",
 "@testing-library/user-event": "^12.8.3",
@@ -12,3 +13,81 @@
 
        ========== in scripts ========
                "start": "webpack-dev-server --mode development",
+
+
+/*************  DIGIKAGAZ PRODUCT : EXTRA CONTENT **************/
+
+              <div className='left-text'>
+                <p>
+                  Digi kaagaz is complete paperless data security tool for
+                  sourcing job and HRM portal management.
+                  Say “No” to Xerox, third party scanners, unsecured email box,
+                  data in everyday life is very important
+                </p>
+              </div>
+              <h4 className='subheading'>JOB Portal</h4>
+              <div className='left-text'>
+                <p>
+                  Job portals, or job boards, which are an integral part of
+                  Digikagaz first view application, where you can advertise jobs
+                  and search for resumes. They are an integral part between a
+                  Job seekers and Recruiter, of almost every hiring process and
+                  using them effectively will translate into qualified
+                  candidates for relative to the requirement.
+                </p>
+              </div>
+              <h4 className='subheading'>HRMS Portal</h4>
+              <div className='left-text'>
+                <p>
+                  Digi Kaagaz is a suite of software applications used to manage
+                  human resources and related processes throughout the employee
+                  lifecycle. which enables a company to fully understand its
+                  workforce while staying compliant with changing tax laws and
+                  labor regulations.
+                </p>
+              </div>
+
+              ================ IDIOMATIC EXPRESSIONS ======================
+                        <div>
+            <h4 className='subheading'>Idiomatic Expressions of Digi Kaagaz</h4>
+            <div className='left-text'>
+              <ul className='desc-list'>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i> &nbsp;DIGI
+                  Kagaz is complete paperless data secured tool for job and HRM
+                  portal management.
+                </li>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i> &nbsp;It
+                  provides end to end process which includes recruitment,
+                  documentation, BGC, offer letter,Credentials, Payroll,
+                  Procurement.
+                </li>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i> &nbsp;user
+                  access can upload resume, build network, maintain Documents
+                </li>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i>{" "}
+                  &nbsp;Roles will be segregated accordingly for example Cloud
+                  role, Developer, Cyber Security, Network Admin etc.
+                </li>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i>{" "}
+                  &nbsp;Admin Access can source profile according to roles
+                  tagged, send email, if shortlisted, schedule a virtual call on
+                  Digi Teams
+                </li>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i> &nbsp;If
+                  User selected, submit docs for BGC (if bgc cleared) release
+                  offer letter, induction
+                </li>
+                <li>
+                  <i className='fa fa-square' aria-hidden='true'></i> &nbsp;GO
+                  Endure includes our GOINDIA Learning portal access with
+                  subscription options for all required courses
+                </li>
+              </ul>
+            </div>
+          </div>
