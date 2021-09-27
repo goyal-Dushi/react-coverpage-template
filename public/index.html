@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="The future is fast approaching, & new era of...">
-  <meta name="keywords" content="goindia, go india, doigital">
-  <meta name="author" content="GO INDIA">
-  
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="The future is fast approaching, & new era of..."
+    />
+    <meta name="keywords" content="goindia, go india, doigital" />
+    <meta name="author" content="GO INDIA" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
     <title>Go India . Digital</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/Goindia-theme.css">
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+    <!-- <link rel="stylesheet" href="assets/css/Goindia-theme.css" /> -->
   </head>
   <body id="menu" class="body-page">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script src="./dist/bundle.js"></script>
+    <!-- <script src="./dist/bundle.js"></script> -->
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -27,71 +40,72 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-     <!-- scripts -->
+    <!-- scripts -->
 
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <!-- <script src="assets/js/jquery-2.1.0.min.js"></script> -->
 
     <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/popper.js"></script> -->
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
 
     <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <!-- <script src="assets/js/waypoints.min.js"></script> -->
+    <!-- <script src="assets/js/jquery.counterup.min.js"></script> -->
+    <!-- <script src="assets/js/imgfix.min.js"></script> -->
+
     <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+    <!-- <script src="assets/js/custom.js"></script> -->
     <script>
-      
-      var TxtRotate = function(el, toRotate, period) {
+      var TxtRotate = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
         this.period = parseInt(period, 100) || 2000;
-        this.txt = '';
+        this.txt = "";
         this.tick();
         this.isDeleting = false;
       };
-      
-      TxtRotate.prototype.tick = function() {
+
+      TxtRotate.prototype.tick = function () {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
-      
+
         if (this.isDeleting) {
           this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
           this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-      
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-      
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
         var that = this;
         var delta = 150 - Math.random() * 100;
-      
-        if (this.isDeleting) { delta /= 2; }
-      
+
+        if (this.isDeleting) {
+          delta /= 2;
+        }
+
         if (!this.isDeleting && this.txt === fullTxt) {
           delta = this.period;
           this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
+        } else if (this.isDeleting && this.txt === "") {
           this.isDeleting = false;
           this.loopNum++;
           delta = 1000;
         }
-      
-        setTimeout(function() {
+
+        setTimeout(function () {
           that.tick();
         }, delta);
       };
-      
-      window.onload = function() {
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i=0; i<elements.length; i++) {
-          var toRotate = elements[i].getAttribute('data-rotate');
-          var period = elements[i].getAttribute('data-period');
+
+      window.onload = function () {
+        var elements = document.getElementsByClassName("txt-rotate");
+        for (var i = 0; i < elements.length; i++) {
+          var toRotate = elements[i].getAttribute("data-rotate");
+          var period = elements[i].getAttribute("data-period");
           if (toRotate) {
             new TxtRotate(elements[i], JSON.parse(toRotate), period);
           }
@@ -99,11 +113,10 @@
         // INJECT CSS
         var css = document.createElement("style");
         css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #3d3d3d }";
+        css.innerHTML =
+          ".txt-rotate > .wrap { border-right: 0.08em solid #3d3d3d }";
         document.body.appendChild(css);
       };
-      
-          </script>
-    
+    </script>
   </body>
 </html>
