@@ -2,16 +2,19 @@
   {
     "id": 1,
     "title": "Times series forecasting",
+    "icon": "fa fa-line-chart",
     "content": "Time series forecasting is part of predictive analytics.It can show likely changes in the data, like seasonalityor cyclic behavior, which provides a better understandingof data variables and helps forecast better."
   },
   {
     "id": 2,
     "title": "Marketing Mix Modelling",
+    "icon": "fa fa-connectdevelop",
     "content": "Statistical analyzation such as multivariate regressionson sales and marketing time series data to estimate theimpact of various marketing tactics (marketing mix) onsales and then forecast the impact of future sets oftactics."
   },
   {
     "id": 3,
     "title": "Price Elasticity",
+    "icon": "fa fa-area-chart",
     "content": "GO ANALYTICS measure the effect of a price change or achange in the quantity supplied on the demand for aproduct or service.with the MMM and TSF"
   }
 ]
