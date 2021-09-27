@@ -1,31 +1,30 @@
 import React from "react";
+import "./bottomNav.css";
+import { Container } from "react-bootstrap";
 function BottomNav() {
   const date = new Date().getFullYear();
   return (
     <>
       <footer>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-lg-12 col-md-12 col-sm-12'>
-              <ul className='social'>
-                {navItems?.map((item) => (
-                  <li key={item?.id}>
-                    <a href={item?.url}>
-                      <i className={item?.icon}></i>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className='row'>
-            <div className='col-lg-12'>
-              <p className='copyright'>
-                Copyright &copy; GOINDIA.DIGITAL {date}
-              </p>
-            </div>
-          </div>
-        </div>
+        <Container
+          className={
+            "d-flex align-items-center justify-content-around flex-column"
+          }>
+          <ul
+            style={{ listStyle: "none" }}
+            className={
+              "d-flex flex-row justify-content-evenly align-items-center icon-container"
+            }>
+            {navItems?.map((item) => (
+              <li className={"text-center"} key={item?.id}>
+                <a className={"social-icon"} href={item?.url}>
+                  <i className={item?.icon}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className={"copyright"}>Copyright &copy; GOINDIA.DIGITAL {date}</p>
+        </Container>
       </footer>
     </>
   );
