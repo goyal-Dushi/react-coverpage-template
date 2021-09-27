@@ -1,48 +1,62 @@
+import {
+  Button,
+  Col,
+  Form,
+  FormControl,
+  FormGroup,
+  Row,
+} from "react-bootstrap";
+import "./messageUs.css";
+
 function MessageUs() {
   return (
     <div className={"col-lg-8 col-md-6 col-sm-12"}>
       <div className={"message-us-card"}>
-        <div className='contact-form'>
-          <h3 style={{ marginBottom: "15px" }}> {"Message Us"} </h3>
-          <form id='contact' action='' method='get'>
-            <div className='row'>
-              <div className='col-lg-6 col-md-12 col-sm-12'>
-                <input
-                  name='name'
-                  type='text'
-                  className='form-control'
-                  id='name'
-                  placeholder='Full Name'
+        <h3 className={"mb-3 mt-2"}> {"Message Us"} </h3>
+        <Form id={"contact"}>
+          <Row>
+            <Col lg={6} md={12} sm={12}>
+              <FormGroup>
+                <FormControl
+                  type={"text"}
+                  name={"name"}
+                  id={"name"}
+                  required
+                  value={""}
+                  placeholder={"Full Name"}
+                />
+              </FormGroup>
+            </Col>
+            <Col lg={6} md={12} sm={12}>
+              <FormGroup>
+                <FormControl
+                  type={"email"}
+                  name={"email"}
+                  id={"email"}
+                  value={""}
+                  required
+                  placeholder={"Email Address"}
+                />
+              </FormGroup>
+            </Col>
+            <Col lg={12}>
+              <FormGroup>
+                <FormControl
+                  as={"textarea"}
+                  rows={6}
+                  value={""}
+                  placeholder={"Your Message"}
                   required
                 />
-              </div>
-              <div className='col-lg-6 col-md-12 col-sm-12'>
-                <input
-                  name='email'
-                  type='email'
-                  className='form-control'
-                  id='email'
-                  placeholder='E-Mail Address'
-                  required
-                />
-              </div>
-              <div className='col-lg-12'>
-                <textarea
-                  name='message'
-                  rows='6'
-                  className='form-control'
-                  id='message'
-                  placeholder='Your Message'
-                  required></textarea>
-              </div>
-              <div className='col-lg-12'>
-                <button type='submit' id='form-submit' className='main-button'>
-                  Send Message
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
+              </FormGroup>
+            </Col>
+            <Col lg={12}>
+              <Button variant={"primary"} type={"submit"}>
+                {"Send Message"}
+              </Button>
+            </Col>
+          </Row>
+        </Form>
       </div>
     </div>
   );

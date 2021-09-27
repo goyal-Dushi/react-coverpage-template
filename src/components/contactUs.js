@@ -1,8 +1,11 @@
+import { Col } from "react-bootstrap";
+import "./contactUs.css";
+
 function ContactUs() {
   return (
-    <div className={"col-lg-4 col-md-6 col-sm-12"}>
-      <div className={"contact-text"}>
-        <h3 style={{ marginBottom: "15px" }}> {"Contact Us"} </h3>
+    <Col lg={4} md={6} sm={12}>
+      <div className={"contact-us-card"}>
+        <h3 className={"mb-2 mt-3"}> {"Contact Us"} </h3>
         {contactDetail?.map((item) => (
           <p>
             {item?.href ? (
@@ -25,7 +28,7 @@ function ContactUs() {
           </p>
         ))}
       </div>
-    </div>
+    </Col>
   );
 }
 const contactDetail = [
