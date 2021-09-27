@@ -1,11 +1,12 @@
 import Robot from "../components/robot";
 import BrandContent from "../components/brandContent";
+import { Container } from "react-bootstrap";
 
 function HeaderSection() {
   return (
     <div className='welcome-area' id='welcome'>
       <div className='header-text'>
-        <div className='container'>
+        <Container>
           <div className='row'>
             <div className='col'>
               <div className='robo-anim'>
@@ -14,7 +15,7 @@ function HeaderSection() {
             </div>
             <BrandContent />
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );

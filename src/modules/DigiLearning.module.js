@@ -1,48 +1,49 @@
 import learningItem from "../data/digiLearning.content.json";
+import {
+  Col,
+  Container,
+  Image,
+  ListGroup,
+  ListGroupItem,
+  Row,
+} from "react-bootstrap";
 
 function DigiLearningSection() {
   return (
-    <section className='section colored' id='dk_learning'>
-      <div className='container'>
-        <div className='container'>
-          <div className='left-heading'>
-            <h2 className='section-title'> {"DIGI KAAGAZ Learning"} </h2>
-          </div>
-          <div className='row'>
-            <div
-              className='col-lg-5 col-md-12 col-sm-12 align-self-center'
-              data-scroll-reveal='enter left move 30px over 0.6s after 0.4s'>
-              <img
-                src='assets/images/dklp.png'
-                className='rounded img-fluid d-block mx-auto'
-                alt='App'
-              />
-            </div>
-            <div className='col-lg-1'></div>
-            <div className='col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix'>
-              <h4 className='subheading'>
-                Best Trainings offered by DIGI KAAGAZ Learning
-              </h4>
-              <div className='left-text'>
-                <ul className='desc-list'>
-                  {learningItem?.map((item) => (
-                    <li id={item?.id}>
-                      <i className='fa fa-certificate' aria-hidden='true'></i>{" "}
-                      &nbsp;{item?.content}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className={"pt-4 pb-4 mt-4 mb-5"} id='dk_learning'>
+      <Container>
+        <h2 className={"display-3 text-center"}> {"DIGI KAAGAZ Learning"} </h2>
+        <h4 className={"display-6 text-center mt-4 mb-3"}>
+          {"Best Trainings offered by DIGI KAAGAZ Learning"}
+        </h4>
+        <Row className={"mt-4 mb-3"}>
+          <Col lg={5} md={12} sm={12} className={"align-self-center"}>
+            <Image
+              fluid
+              src={"assets/images/dklp.png"}
+              className={"d-block mx-auto"}
+              alt={"App"}
+            />
+          </Col>
+          <Col lg={6} md={12} sm={12} className={"align-self-center mx-auto"}>
+            <ListGroup variant={"flush"}>
+              {learningItem?.map((item) => (
+                <ListGroupItem id={item?.id}>
+                  <i className='fa fa-certificate' aria-hidden='true'></i>{" "}
+                  &nbsp;{item?.content}
+                </ListGroupItem>
+              ))}
+            </ListGroup>
+          </Col>
+        </Row>
+      </Container>
 
-        <img
-          src='assets/images/glmodule.png'
-          className='rounded img-fluid d-block mx-auto'
-          alt='App'
-        />
-      </div>
+      <Image
+        fluid
+        src={"assets/images/glmodule.png"}
+        className={"d-block mx-auto"}
+        alt={"explaing-img"}
+      />
     </section>
   );
 }
