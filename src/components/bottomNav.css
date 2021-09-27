@@ -1,0 +1,45 @@
+footer {
+  background-color: rgba(33, 18, 41, 0.8);
+  padding: 15px 0px 0px;
+}
+
+.social-icon {
+  color: #685bd9;
+  text-decoration: none;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  line-height: 36px;
+  display: block;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social-icon:hover {
+  background-color: #000441;
+  color: #fff;
+}
+
+.copyright {
+  color: blanchedalmond;
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  /* width: 40%; */
+  text-align: center;
+}
+
+.icon-container {
+  text-align: center;
+  width: 40%;
+}
+
+@media screen and (max-width: 375px) {
+  .icon-container {
+    width: 100%;
+  }
+}
