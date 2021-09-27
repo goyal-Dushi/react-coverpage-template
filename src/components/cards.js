@@ -1,21 +1,26 @@
+import { Col } from "react-bootstrap";
 import serviceData from "../data/services.json";
+import "./cards.css";
 
 function ServiceCards() {
   return (
     <>
       {serviceData?.map((item) => (
-        <div
+        <Col
+          lg={4}
+          md={6}
+          sm={6}
           key={item?.id}
-          className='col-lg-4 col-md-6 col-sm-6 col-12'
-          data-scroll-reveal='enter bottom move 50px over 0.6s after 0.6s'>
-          <div className='features-small-item'>
-            <div className='icon'>
-              <i className='fa fa-area-chart' aria-hidden='true'></i>
+          className={"col-12 mt-3"}
+          data-scroll-reveal={"enter bottom move 50px over 0.6s after 0.6s"}>
+          <div className={"features-card p-4"}>
+            <div className={"feature-icon"}>
+              <i className={item?.icon} aria-hidden='true'></i>
             </div>
-            <h5 className='features-title'> {item?.title} </h5>
+            <h5 className={"features-title mt-3 mb-3"}> {item?.title} </h5>
             <p>{item?.content}</p>
           </div>
-        </div>
+        </Col>
       ))}
     </>
   );
