@@ -1,59 +1,74 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "./navmenu.css";
 import Nav from "react-bootstrap/Nav";
-import { BrowserRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
 function NavMenu() {
   return (
-    <BrowserRouter>
-      <header className='header-area header-sticky'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12'>
-              <Navbar className='main-nav' expand='lg'>
-                <Navbar.Brand
-                  href='https://www.goindia.digital/'
-                  className='logo'>
-                  <img src='assets/images/Logo.png' alt='Go India Logo' />
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                <Navbar.Collapse id='basic-navbar-nav'>
-                  <Nav className='mr-auto'>
-                    <Nav.Link href='/'>HOME</Nav.Link>
-                    <NavDropdown className='lvl2' title='PRODUCTS'>
-                      <NavDropdown.Item className='li2' href='#goanalytics'>
-                        Go Analytics
-                      </NavDropdown.Item>
-                      <NavDropdown.Item className='li2' href='#digikaagaz'>
-                        DIGI KAAGAZ
-                      </NavDropdown.Item>
-                      {/* <NavDropdown.Item  className="li2" href="#" >GO KRISHI</NavDropdown.Item>*/}
-                    </NavDropdown>
-                    <NavDropdown className='lvl2' title='SERVICES'>
-                      <NavDropdown.Item className='li2' href='#dk_learning'>
-                        DIGI KAAGAZ LEARNING
-                      </NavDropdown.Item>
-                      <NavDropdown.Item className='li2' href='#'>
-                        IT CONSULTING
-                      </NavDropdown.Item>
-                      <NavDropdown.Item className='li2' href='#bman'>
-                        BUSINESS MANAGEMENT
-                      </NavDropdown.Item>
-                      <NavDropdown.Item className='li2' href='#'>
-                        FOOD SUPPLY CHAIN
-                      </NavDropdown.Item>
-                    </NavDropdown>
-                    <Nav.Link href='#faq'>FAQ</Nav.Link>
-                    <Nav.Link href='#contactus'>CONTACT US</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Navbar>
-            </div>
-          </div>
-        </div>
-      </header>
-    </BrowserRouter>
+    <header className='header-area header-sticky'>
+      <Navbar
+        collapseOnSelect
+        variant={"light"}
+        bg={"light"}
+        fixed={"top"}
+        expand={"sm"}>
+        <Container>
+          <Navbar.Brand href='/'>
+            <FontAwesomeIcon size={"lg"} icon={faLightbulb} />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav className='me-auto'>
+              <Nav.Link href='/'>HOME</Nav.Link>
+              <NavDropdown title='PRODUCTS'>
+                {products.map((item, i) => (
+                  <NavDropdown.Item key={i} href='#doremgipsum'>
+                    {item?.name}
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+              <NavDropdown title='SERVICES'>
+                {services.map((item, i) => (
+                  <NavDropdown.Item key={i} href='#services'>
+                    {item?.name}
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+              <Nav.Link href='#faq'>FAQ</Nav.Link>
+              <Nav.Link href='#contactus'>CONTACT US</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
   );
 }
-export default NavMenu;
+
+const products = [
+  {
+    name: "Product 1",
+  },
+  {
+    name: "Product 2",
+  },
+  {
+    name: "Product 3",
+  },
+];
+
+const services = [
+  {
+    name: "Services 1",
+  },
+  {
+    name: "Services 2",
+  },
+  {
+    name: "Services 3",
+  },
+];
+
+export default withRouter(NavMenu);
