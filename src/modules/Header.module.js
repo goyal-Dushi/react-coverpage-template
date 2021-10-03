@@ -1,23 +1,22 @@
-import Robot from "../components/robot";
 import BrandContent from "../components/brandContent";
-import { Container } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 
 function HeaderSection() {
   return (
-    <div className='welcome-area' id='welcome'>
-      <div className='header-text'>
-        <Container>
-          <div className='row'>
-            <div className='col'>
-              <div className='robo-anim'>
-                <Robot />
-              </div>
-            </div>
-            <BrandContent />
-          </div>
-        </Container>
-      </div>
-    </div>
+    <Container id={"#home"} className={"mt-5 mb-5 fluid"}>
+      <Row>
+        <Col
+          className={"d-flex align-items-center justify-content-center"}
+          lg={6}
+          md={6}
+          sm={12}>
+          <Image roundedCircle fluid src={"/assets/images/dklp.webp"} />
+        </Col>
+        <Col lg={6} md={6} sm={12}>
+          <BrandContent />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
