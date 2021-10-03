@@ -1,7 +1,7 @@
 import HeaderSection from "../modules/Header.module";
 import ServiceSection from "../modules/Service.module";
 import ProductsSection from "../modules/Products.module";
-import DigiLearningSection from "../modules/DigiLearning.module";
+import ExtraInfoSection from "../modules/ExtraInfo.module";
 import FAQdisplay from "../modules/FAQ.module";
 import HelpSection from "../modules/Help.module";
 import KeepInTouchSection from "../modules/KeepInTouch.module";
@@ -13,7 +13,7 @@ function LandingPage() {
       <HeaderSection />
       <ServiceSection />
       <ProductsSection />
-      <DigiLearningSection />
+      <ExtraInfoSection />
       <FAQdisplay />
       <HelpSection />
       <KeepInTouchSection />
