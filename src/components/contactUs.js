@@ -1,5 +1,7 @@
 import { Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./contactUs.css";
+import { faAddressBook, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 function ContactUs() {
   return (
@@ -7,24 +9,11 @@ function ContactUs() {
       <div className={"contact-us-card"}>
         <h3 className={"mb-2 mt-3"}> {"Contact Us"} </h3>
         {contactDetail?.map((item) => (
-          <p>
-            {item?.href ? (
-              <a href={item?.href}>
-                <strong>
-                  <i className={item?.icon} aria-hidden='true'></i>
-                </strong>
-                &nbsp; &nbsp; {item?.title}
-                <br />
-              </a>
-            ) : (
-              <>
-                <strong>
-                  <i className={item?.icon} aria-hidden='true'></i>
-                </strong>
-                &nbsp; &nbsp; {item?.title}
-                <br />
-              </>
-            )}
+          <p key={item?.id}>
+            <strong>
+              <FontAwesomeIcon size={"lg"} icon={item?.icon} />
+            </strong>
+            <span> {item?.title} </span>
           </p>
         ))}
       </div>
@@ -34,19 +23,13 @@ function ContactUs() {
 const contactDetail = [
   {
     id: 1,
-    title: "Info@goinida.digital",
-    icon: "fa fa-envelope",
+    title: "Info@yourcompany.com",
+    icon: faEnvelope,
   },
   {
     id: 2,
-    title: "+91 808 819 1336",
-    icon: "fa fa-phone",
-  },
-  {
-    id: 3,
-    href: "https://wa.me/918088191336",
-    title: "+91 808 819 1336",
-    icon: "fa fa-whatsapp",
+    title: "+91 839 328 8293",
+    icon: faAddressBook,
   },
 ];
 export default ContactUs;
