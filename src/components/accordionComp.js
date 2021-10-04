@@ -9,7 +9,7 @@ function AccordionComp(props) {
   return (
     <Accordion>
       {props?.content.map((item, i) => (
-        <Card bg={"light"} className={"mt-2"}>
+        <Card key={i} bg={"light"} className={"mt-2"}>
           <AccordionToggle as={Card.Header} eventKey={JSON.stringify(i)}>
             {item?.title}
           </AccordionToggle>
