@@ -22,7 +22,7 @@ function MessageUs() {
                   name={"name"}
                   id={"name"}
                   required
-                  value={""}
+                  // value={""}
                   placeholder={"Full Name"}
                 />
               </FormGroup>
@@ -33,7 +33,7 @@ function MessageUs() {
                   type={"email"}
                   name={"email"}
                   id={"email"}
-                  value={""}
+                  // value={""}
                   required
                   placeholder={"Email Address"}
                 />
@@ -44,7 +44,7 @@ function MessageUs() {
                 <FormControl
                   as={"textarea"}
                   rows={6}
-                  value={""}
+                  // value={""}
                   placeholder={"Your Message"}
                   required
                 />
