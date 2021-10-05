@@ -2,10 +2,10 @@
 
 # Table of contents
 
-- (About)[#about]
-- (Getting Started)[#getting-started]
-- (Usage)[#usage]
-- (Contribution Guidelines)[#contribution-guidelines]
+- [About](#about)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contribution Guidelines](#contribution-guidelines)
 
 # About
 
@@ -14,7 +14,7 @@ This template is made using **Reactjs** with **Bootstrap**, allowing you to get 
 The directory strucutre of the project, and splitting of the code into components & modules makes
 this template scalable & manageable.
 
-### Don't just fork the repo , do leave a :star
+### Don't just fork the repo , do leave a :star:
 
 # Getting started
 
