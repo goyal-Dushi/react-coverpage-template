@@ -2,19 +2,21 @@
 
 # Table of contents
 
-- (About)[#about]
-- (Getting Started)[#getting-started]
-- (Usage)[#usage]
-- (Contribution Guidelines)[#contribution-guidelines]
+- [About](#about)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contribution Guidelines](#contribution-guidelines)
 
 # About
+
+![react-template](https://user-images.githubusercontent.com/40212568/136203625-519c08ef-4319-4bd6-8cbd-441f33bdabcf.gif)
 
 This template is made using **Reactjs** with **Bootstrap**, allowing you to get started with building responsive cover page for your website with ease.
 
 The directory strucutre of the project, and splitting of the code into components & modules makes
 this template scalable & manageable.
 
-### Don't just fork the repo , do leave a :star
+### Don't just fork the repo , do leave a :star:
 
 # Getting started
 
