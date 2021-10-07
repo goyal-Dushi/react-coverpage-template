@@ -22,6 +22,7 @@ function MessageUs() {
                   name={"name"}
                   id={"name"}
                   required
+                  autoComplete={"off"}
                   // value={""}
                   placeholder={"Full Name"}
                 />
@@ -33,6 +34,7 @@ function MessageUs() {
                   type={"email"}
                   name={"email"}
                   id={"email"}
+                  autoComplete={"off"}
                   // value={""}
                   required
                   placeholder={"Email Address"}
@@ -44,6 +46,7 @@ function MessageUs() {
                 <FormControl
                   as={"textarea"}
                   rows={6}
+                  autoComplete={"off"}
                   // value={""}
                   placeholder={"Your Message"}
                   required
