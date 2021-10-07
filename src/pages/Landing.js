@@ -6,10 +6,17 @@ import FAQdisplay from "../modules/FAQ.module";
 import HelpSection from "../modules/Help.module";
 import KeepInTouchSection from "../modules/KeepInTouch.module";
 import BottomNav from "../components/bottomNav";
+import Meta from "../components/meta";
 
 function LandingPage() {
   return (
     <>
+      <Meta
+        title={"My Company"}
+        description={
+          "My company, your one stop solution to all development, technological problems!"
+        }
+      />
       <HeaderSection />
       <ServiceSection />
       <ProductsSection />
