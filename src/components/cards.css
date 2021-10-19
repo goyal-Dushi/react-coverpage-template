@@ -17,7 +17,7 @@
 .features-card:hover {
   color: #31344b;
   border-color: #e6e7ee;
-  box-shadow: inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff;
+  box-shadow: inset 4px 4px 10px #b8b9be, inset -3px -3px 7px #fff;
 }
 
 .feature-icon {

@@ -4,7 +4,7 @@ import ServiceCards from "../components/cards";
 function ServiceSection() {
   return (
     <>
-      <section id={"#services"} className={"pt-3 pb-3 mt-5 mb-5"}>
+      <section id={"#services"} className={"pb-5"}>
         <Container>
           <h1 className={"display-3 mb-4 text-capitalize text-center"}>
             {"Our services & focus on"}

@@ -5,7 +5,7 @@ function BrandContent() {
         "d-flex flex-column justify-content-evenly align-items-center h-100 text-center"
       }>
       <h1 className={"display-1 text-uppercase"}> {"my company"} </h1>
-      <h2 className={"display-3 text-capitalize"}>
+      <h2 className={"display-4 text-capitalize"}>
         {"bringing people together"}
       </h2>
       <div className={"text-center"}>

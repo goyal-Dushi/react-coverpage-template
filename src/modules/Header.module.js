@@ -3,7 +3,10 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 
 function HeaderSection() {
   return (
-    <Container id={"#home"} className={"mt-5 mb-5 fluid"}>
+    <Container
+      style={{ height: "100vh" }}
+      id={"#home"}
+      className={"d-flex flex-column justify-content-center fluid"}>
       <Row>
         <Col
           className={"d-flex align-items-center justify-content-center"}
