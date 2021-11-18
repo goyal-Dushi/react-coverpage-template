@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">
+<style>
+.w3-theme-gradient {
+  color: #000 !important;
+  background:-webkit-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
+.w3-theme-gradient {
+  color: #000 !important;
+  background:-moz-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
+.w3-theme-gradient {
+  color: #000 !important;
+  background:-o-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
+.w3-theme-gradient {
+  color: #000 !important;
+  background:-ms-linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
+.w3-theme-gradient {
+  color: #000 !important;
+  background: linear-gradient(top,#64B5F6 25%,#42A5F5 75%)}
+</style>
+<body>
+
+<div class="w3-card-4">
+<div class="w3-container w3-theme w3-card">
+  <h1>Blue</h1>
+</div>
+
+<div class="w3-container w3-text-theme">
+<h2>w3-text-theme</h2></div>
+
+<ul class="w3-ul w3-border-top">
+  <li class="w3-theme-l5">
+  <a class="w3-button w3-xlarge w3-circle w3-theme-action"
+  style="position:fixed;top:48px;right:24px;">+</a>
+  <p>w3-theme-l5 (w3-theme-light)</p>
+  </li>
+  <li class="w3-theme-l4">
+    <p>w3-theme-l4</p>
+  </li>
+  <li class="w3-theme-l3">
+    <p>w3-theme-l3</p>
+  </li>
+  <li class="w3-theme-l2">
+    <p>w3-theme-l2</p>
+  </li>
+  <li class="w3-theme-l1">
+    <p>w3-theme-l1</p>
+  </li>
+  <li class="w3-theme">
+    <p>w3-theme</p>
+  </li>
+  <li class="w3-theme-d1">
+    <p>w3-theme-d1</p>
+  </li>
+  <li class="w3-theme-d2">
+    <p>w3-theme-d2</p>
+  </li>
+  <li class="w3-theme-d3">
+    <p>w3-theme-d3</p>
+  </li>
+  <li class="w3-theme-d4">
+    <p>w3-theme-d4 (w3-theme-dark)</p>
+  </li>
+  <li class="w3-theme-gradient">
+    <p>w3-theme-gradient</p>
+  </li>
+</ul>
+</div>
+
+</body>
+</html>
