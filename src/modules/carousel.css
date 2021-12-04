@@ -3,15 +3,9 @@
      padding: 5% 0 0 0;
 }
 
-.carousel-container h3 {
-    width: 30%;
-    margin: 0 auto;
-    color: #000000;
-    margin-bottom: 15px;
-    font-size: 36px;
-    line-height: 48px;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
+.carousel-container h2 {
+    width: 70%;
+    margin: 0 auto; 
     
 }
 
@@ -32,12 +26,23 @@
     padding: 5% 0;
 }
 
+.carousel-container .item .box {
+    width: 40%;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45); 
+}
+
 .carousel-container .item img {
   margin-bottom: 30px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100px;
 }
 
 .carousel-container .item p {
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     font-style: italic;
     font-weight: 400;
