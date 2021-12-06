@@ -56,11 +56,23 @@
     font-size: 16px;
     text-transform: capitalize;
     letter-spacing: 0.2px;
-    color: #ed1b24;
-    font-family: 'Roboto', sans-serif;
+    color: #4d9ef2;
+    font-family: 'Roboto', sans-serif; 
 }
  
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
     filter: invert(100%);
 }
+
+@media only screen and (max-width: 1200px) {
+    .carousel-container .item .box {
+        width: 75%;
+    }
+    .carousel-container .item p {
+        font-size: 17px; 
+    }
+    .carousel-container .item p:last-child { 
+        font-size: 14px; 
+    }
+  }

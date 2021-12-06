@@ -15,22 +15,20 @@ const reviews = [
     {
         logo: c2,
         customer: 'John Doe - Business Men',
-        review: `Medical Surgery in my opinion has to be one of the best in the area. I have never had a problem getting to see a doctor or getting through from the telephone. All the Doctors here are very good and very considerate
-        and more importantly very efficient .`
+        review: `Medical Surgery in my opinion has to be one of the best in the area. I have never had a problem getting to see a doctor or getting through from the telephone. All the Doctors here are very good and considerate.`
     },
     {   
         logo: c1,
         customer: 'Jackina Doe - House Wife',
-        review: `I'm simply extremely satisfied with the quality and level of care received from Medical Centre not only to myself, but also my children and an elderly relative. excellent work`
+        review: `I'm simply extremely satisfied with the quality and level of care received from Medical Centre not only to myself, but also my children and an elderly relative. excellent work and honestly appreciated by us.`
     },
 ]
 const CarouselModule = ({ }) => {
     return (
-        <div className="carousel-container">
-            <h2 className={"display-4"}>Read what our past patients said
-                about our medical center.</h2>
+        <div className="carousel-container" id="reviews">
+            <h2 className={"display-4"}>Our customer reviews</h2>
 
-            <Carousel>
+            <Carousel indicators>
                 {reviews.map(({ customer, review, logo }) => (
                     <Carousel.Item>
                         <div className="item">
