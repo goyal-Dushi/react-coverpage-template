@@ -1,6 +1,7 @@
 .carousel-container {
      text-align: center;
      padding: 5% 0 0 0;
+     margin-bottom: 30px;
 }
 
 .carousel-container h2 {
@@ -23,7 +24,7 @@
 }
 
 .carousel-container .item {
-    padding: 5% 0;
+    padding: 5% 0; 
 }
 
 .carousel-container .item .box {
@@ -75,4 +76,13 @@
     .carousel-container .item p:last-child { 
         font-size: 14px; 
     }
-  }
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-container {
+        margin-bottom: 0;
+    }
+    .carousel-container .item { 
+       padding: 7% 0;
+    }
+}

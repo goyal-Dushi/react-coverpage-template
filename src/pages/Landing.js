@@ -7,7 +7,7 @@ import HelpSection from "../modules/Help.module";
 import KeepInTouchSection from "../modules/KeepInTouch.module";
 import BottomNav from "../components/bottomNav";
 import Meta from "../components/meta";
-import Carousel from '../modules/Carousel'
+import UserReviews from '../modules/UserReviews.module'
 
 function LandingPage() {
   return (
@@ -24,7 +24,7 @@ function LandingPage() {
       <ExtraInfoSection />
       <FAQdisplay />
       <HelpSection />
-      <Carousel />
+      <UserReviews />
       <KeepInTouchSection />
       <BottomNav />
     </>
