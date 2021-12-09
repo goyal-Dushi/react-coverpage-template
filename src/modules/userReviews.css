@@ -1,6 +1,6 @@
 .carousel-container {
      text-align: center;
-     padding: 5% 0 0 0;
+     padding: 2% 0 4% 0;
      margin-bottom: 30px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .carousel-container .item {
-    padding: 5% 0; 
+    padding: 2% 0; 
 }
 
 .carousel-container .item .box {
@@ -81,8 +81,5 @@
 @media only screen and (min-width: 768px) {
     .carousel-container {
         margin-bottom: 0;
-    }
-    .carousel-container .item { 
-       padding: 7% 0;
-    }
+    } 
 }
