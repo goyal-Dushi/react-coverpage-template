@@ -38,6 +38,8 @@ function NavMenu() {
                 ))}
               </NavDropdown>
               <Nav.Link href='#faq'>FAQ</Nav.Link>
+              <Nav.Link href='#reviews'>REVIEWS
+              </Nav.Link>
               <Nav.Link href='#contactus'>CONTACT US</Nav.Link>
             </Nav>
           </Navbar.Collapse>
